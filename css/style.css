@@ -51,10 +51,17 @@ a {
   flex-shrink: 0;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;   /* центрируем элементы */
+  gap: 16px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 16px;
   white-space: nowrap;
+  margin-right: auto;
 }
 
 .main-nav {
@@ -411,8 +418,9 @@ a {
 
 .logo-image {
   display: block;
-  width: clamp(110px, 10vw, 190px);
+  width: clamp(110px, 10vw, 180px);
   height: auto;
+  margin: 0;
 }
 
 @media (max-width: 960px) {
