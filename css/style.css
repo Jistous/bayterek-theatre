@@ -53,8 +53,10 @@ a {
 
 .header-inner {
   display: flex;
-  align-items: center;   /* центрируем элементы */
+  align-items: center;
+  justify-content: space-between;
   gap: 16px;
+  height: 72px;
 }
 
 .logo {
@@ -421,16 +423,4 @@ a {
   width: clamp(110px, 10vw, 180px);
   height: auto;
   margin: 0;
-}
-
-@media (max-width: 960px) {
-  .logo-image {
-    width: 120px;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo-image {
-    width: 100px;
-  }
 }
