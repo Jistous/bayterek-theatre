@@ -631,3 +631,47 @@ a {
   height: auto;
   object-fit: cover;
 }
+
+.top-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-wrapper {
+  max-width: 1120px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+.banner-button {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+  
+
+  top: 6%;
+  right: 6%;
+
+ 
+  width: 16%;
+  height: 8%;
+
+  background: rgba(255, 255, 255, 0);
+}
