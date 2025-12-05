@@ -586,18 +586,19 @@ a {
 
 .top-banner {
   width: 100%;
-  background: #fff;
   display: flex;
   justify-content: center;
-  padding: 0;
+  background: #fff;
   margin: 0;
+  padding: 0;
 }
 
-.banner-container {
-  width: 100%;
+.banner-wrapper {
+  position: relative;
   max-width: 1120px;
-  border-radius: 0 0 32px 32px;
+  width: 100%;
   overflow: hidden;
+  border-radius: 0 0 32px 32px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
@@ -605,73 +606,27 @@ a {
   width: 100%;
   height: auto;
   display: block;
-}
-
-@media (max-width: 480px) {
-  .banner-image {
-    border-radius: 0 0 24px 24px;
-  }
-}
-
-.top-banner {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-}
-
-.top-banner picture,
-.top-banner img {
-  display: block;
-  width: 100%;
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
-.top-banner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.banner-wrapper {
-  max-width: 1120px;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 0 0 32px 32px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banner-wrapper {
-  position: relative;
-}
 
 .banner-button {
   position: absolute;
   display: block;
   cursor: pointer;
   z-index: 10;
-  
 
   top: 6%;
   right: 6%;
 
- 
   width: 16%;
   height: 8%;
 
   background: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 480px) {
+  .banner-wrapper {
+    border-radius: 0 0 24px 24px;
+  }
 }
